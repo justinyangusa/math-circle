@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- Why do I even bother with IE? -->
 		<!--[if lt IE 9]>
 			<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -36,16 +37,16 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Competitions</a></li>
-						<li><a href="#">Officers</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a data-scroll href="#about">About</a></li>
+						<li><a data-scroll href="#competitions">Competitions</a></li>
+						<li><a data-scroll href="#officers">Officers</a></li>
+						<li><a data-scroll href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-	<div id="headerwrap">
+	<div id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-lg-push-6">
@@ -55,11 +56,11 @@
 					<h1>Gunn Math Circle</h1>
 					<h2>We meet every Monday at lunch in Mr.&nbsp;Herreshoff&rsquo;s room, N-201.</h3>
 					<h3>We seek to promote an appreciation and understanding of math beyond the typical high school curriculum by hosting weekly talks, in-house contests, games, and guest speakers. We also help students prepare for and participate in many contests throughout the school year.</h3>
-					<form class="form-inline" role="form">
+					<form class="form-inline" role="form" action="https://docs.google.com/forms/d/11MIrC8uEambq7Exx7q0XUE8R_kv2Ijbi0u8j3b6CelA/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 						<div class="form-group">
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+							<input type="email" class="form-control" name="entry.1226946022" id="entry_1226946022" placeholder="Enter your email address">
 						</div>
-						<button type="submit" class="btn btn-email btn-lg">Add me to the email list!</button>
+						<button type="submit" name="submit" value="Submit" class="btn btn-email btn-lg">Add me to the email list!</button>
 					</form>
 				</div>
 
@@ -67,12 +68,11 @@
 		</div>
 	</div>
 
-
-	<div class="container">
+	<div id="competitions" class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Events &amp; Competitions</h1>
-				<h3>hurr-durr dot com is fun. so is qwop</h3>
+				<h3>Some of the events in which we participate as a club</h3>
 			</div>
 		</div>
 
@@ -84,12 +84,16 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseAMC">
 							AMC 10/12
 						</a>
+						<div class="dateLocation">
+							Tuesday, February 3 (A) &amp;
+							Wednesday, February 25 (B)
+						</div>
 					</h4>
 				</div>
 				<div id="collapseAMC" class="panel-collapse collapse">
 					<div class="panel-body">
-						Date: 2/8/11(A) or 2/23/11(B)<br>
 						Location: Gunn<br>
+						The AMC 10 is a 25-question, 75-minute, multiple choice examination in secondary school mathematics containing problems which can be understood and solved with algebra and geometry concepts. The AMC 12 is a 25-question, 75-minute, multiple choice examination in secondary school mathematics containing problems which can be understood and solved with pre-calculus concepts. Two different versions of the contests are given on two dates, about two weeks apart, in February. Each AMC 10 and AMC 12 contest contain about 12 of the same math problems.<br>
 						The IMO (International Mathematics Olympiad) team selection series of contests begins with the AMC's (American Mathematics Competition), which all of Gunn is eligible to take. If you're a 9th or 10th grader, you can choose between the AMC10 and the AMC12. If you're an 11th or 12th grader, you can only take the AMC12. All test versions have 25 multiple choice questions arranged in ascending order of difficulty, given 75 minutes to fill in the bubbles from A-E.
 					</div>
 				</div>
@@ -100,6 +104,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseAIME">
 							AIME - American Invitational Mathematics Examination
 						</a>
+						<div class="dateLocation">
+							Thursday, March 19 (I) &amp; Wednesday, March 25 (II)
+						</div>
 					</h4>
 				</div>
 				<div id="collapseAIME" class="panel-collapse collapse">
@@ -114,6 +121,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseUSAMO">
 							USA(J)MO - United States of America (Junior) Mathematical Olympiad
 						</a>
+						<div class="dateLocation">
+							Tuesday &amp; Wednesday, April 28 &amp; 29
+						</div>
 					</h4>
 				</div>
 				<div id="collapseUSAMO" class="panel-collapse collapse">
@@ -130,6 +140,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSMT">
 							SMT - Stanford Math Tournament
 						</a>
+						<div class="dateLocation">
+							Saturday, February 14
+						</div>
 					</h4>
 				</div>
 				<div id="collapseSMT" class="panel-collapse collapse">
@@ -144,6 +157,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseBMT">
 							BMT - Berkeley Math Tournament
 						</a>
+						<div class="dateLocation">
+							Saturday, March 7
+						</div>
 					</h4>
 				</div>
 				<div id="collapseBMT" class="panel-collapse collapse">
@@ -158,6 +174,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseHMMT">
 							HMMT - Harvard-MIT Mathematics Tournament
 						</a>
+						<div class="dateLocation">
+							Saturday, February 21
+						</div>
 					</h4>
 				</div>
 				<div id="collapseHMMT" class="panel-collapse collapse">
@@ -172,6 +191,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseCHMMC">
 							CHMMC - Caltech Harvey Mudd Math Competition
 						</a>
+						<div class="dateLocation">
+							Saturday, November 22
+						</div>
 					</h4>
 				</div>
 				<div id="collapseCHMMC" class="panel-collapse collapse">
@@ -188,6 +210,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseBAMO">
 							BAMO - Bay Area Mathematical Olympiad
 						</a>
+						<div class="dateLocation">
+							Late February
+						</div>
 					</h4>
 				</div>
 				<div id="collapseBAMO" class="panel-collapse collapse">
@@ -202,6 +227,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseARMLPower">
 							ARML Power
 						</a>
+						<div class="dateLocation">
+							November &amp; January
+						</div>
 					</h4>
 				</div>
 				<div id="collapseARMLPower" class="panel-collapse collapse">
@@ -216,6 +244,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseInterstellar">
 							Interstellar
 						</a>
+						<div class="dateLocation">
+							First Semester
+						</div>
 					</h4>
 				</div>
 				<div id="collapseInterstellar" class="panel-collapse collapse">
@@ -230,6 +261,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseCML">
 							CAML - California Math League
 						</a>
+						<div class="dateLocation">
+							Various Times in the Year
+						</div>
 					</h4>
 				</div>
 				<div id="collapseCML" class="panel-collapse collapse">
@@ -246,6 +280,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseMathLeague">
 							MathLeague
 						</a>
+						<div class="dateLocation">
+							Various Times in the Year
+						</div>
 					</h4>
 				</div>
 				<div id="collapseMathLeague" class="panel-collapse collapse">
@@ -260,6 +297,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseARML">
 							ARML - American Regions Mathematics League
 						</a>
+						<div class="dateLocation">
+							Friday &amp; Saturday, May 29-30
+						</div>
 					</h4>
 				</div>
 				<div id="collapseARML" class="panel-collapse collapse">
@@ -274,6 +314,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSC">
 							Santa Clara
 						</a>
+						<div class="dateLocation">
+							November
+						</div>
 					</h4>
 				</div>
 				<div id="collapseSC" class="panel-collapse collapse">
@@ -288,6 +331,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSCVMA">
 							Mad Hatter/SCVMA
 						</a>
+						<div class="dateLocation">
+							March
+						</div>
 					</h4>
 				</div>
 				<div id="collapseSCVMA" class="panel-collapse collapse">
@@ -304,6 +350,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseUSAMTS">
 							USAMTS - USA Mathematical Talent Search
 						</a>
+						<div class="dateLocation">
+							Six Times in the Year
+						</div>
 					</h4>
 				</div>
 				<div id="collapseUSAMTS" class="panel-collapse collapse">
@@ -318,6 +367,9 @@
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseNIMO">
 							NIMO/OMO
 						</a>
+						<div class="dateLocation">
+							Various
+						</div>
 					</h4>
 				</div>
 				<div id="collapseNIMO" class="panel-collapse collapse">
@@ -329,7 +381,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div id="officers" class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Math Circle Officers</h1>
@@ -342,33 +394,33 @@
 				<img class="img-circle" src="img/qwu.jpg" width="140" alt="">
 				<h4>Quinn Wu</h4>
 				<h5>President</h5>
-				<p>Quinn Wu is a master troll who happens to be this club's president. idek how.</p>
+				<p>A senior, Quinn has strong passion in math, science, and engineering. He is a 2014 USAMO Qualifier. Quinn currently serves as the president of Math Circles and Green Energy Innovation Club at Gunn High School. Outside of science and technology, Quinn loves music, sports, studying languages, and traveling. He has played the piano before.</p>
 			</div>
 
 			<div class="col-lg-3">
 				<img class="img-circle" src="img/msankar.jpg" width="140" alt="">
 				<h4>Maya Sankar</h4>
 				<h5>Vice President</h5>
-				<p>Maya is a freshman (sophomore?) who is a troll.</p>
+				<p>A sophomore, Maya likes math and stuff.</p>
 			</div>
 
 			<div class="col-lg-3">
 				<img class="img-circle" src="img/echangdavidson.jpg" width="140" alt="">
 				<h4>Elizabeth Chang-Davidson</h4>
 				<h5>Secretary</h5>
-				<p>Elizabeth has a really long and convoluted name. Consider revising.</p>
+				<p>A senior, Elizabeth is in math circle.</p>
 			</div>
 
 			<div class="col-lg-3">
 				<img class="img-circle" src="img/jahn.jpg" width="140" alt="">
 				<h4>Jane Ahn</h4>
 				<h5>Treasurer</h5>
-				<p>Jane is also a troll. These people should submit their blurbs already.</p>
+				<p>A sophomore, Jane does math too.</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
+	<div id="contact" class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Contact Us</h1>
@@ -378,18 +430,18 @@
 
 		<div class="row mt centered">
 			<div class="col-lg-3 col-lg-offset-3 col-lg-push-3">
-				<i class="fa fa-envelope fa-5x"></i>
-				<h4>Facebook Group</h4>
-				<h5>blah blah</h5>
-				<p>Join the Facebook group</p>
+				<i class="fa fa-facebook-square fa-5x"></i>
+				<h4>Join the Facebook Group</h4>
+				<p>fb.me/groups/[profile link]</p>
 			</div>
 
-			<div class="col-lg-3 col-lg-pull-3">
-				<i class="fa fa-facebook-square fa-5x"></i>
-				<h4>Email the club</h4>
-				<h5>for whatever</h5>
-				<p>Why are maya and quinn's faces here?</p>
-			</div>
+			<a href="mailto:info@gunnmathcircle.com">
+				<div class="col-lg-3 col-lg-pull-3">
+					<i class="fa fa-envelope fa-5x"></i>
+					<h4>Email Us</h4>
+					<p>info@gunnmathcircle.com</p>
+				</div>
+			</a>
 		</div>
 	</div>
 
@@ -397,20 +449,23 @@
 		<hr>
 		<div class="row centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<form class="form-inline" role="form">
+				<form class="form-inline" role="form" action="https://docs.google.com/forms/d/11MIrC8uEambq7Exx7q0XUE8R_kv2Ijbi0u8j3b6CelA/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 					<div class="form-group">
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+						<input type="email" class="form-control" name="entry.1226946022" id="entry_1226946022" placeholder="Enter your email address">
 					</div>
-					<button type="submit" class="btn btn-email btn-lg">Add me to the email list!</button>
+					<button type="submit" name="submit" value="Submit" class="btn btn-email btn-lg">Add me to the email list!</button>
 				</form>
 			</div>
 			<div class="col-lg-3"></div>
 		</div>
 		<hr>
-		<p class="centered">Gunn Math Circle &middot; info@gunnwhateverclub.com</p>
+		<p class="centered">Gunn Math Circle &middot; <a href="mailto:info@gunnmathcircle.com">info@gunnmathcircle.com</a> &middot; Updated September 2014</p>
 	</div>
 
 		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="js/bind-polyfill.min.js"></script>
+		<script src="js/smooth-scroll.min.js"></script>
+		<script>smoothScroll.init();</script>
 	</body>
 </html>
