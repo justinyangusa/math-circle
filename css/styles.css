@@ -174,3 +174,8 @@ i {
 .dateLocation {
 	float:right!important;
 }
+
+.officer {
+	width: 140px;
+	height: auto;
+}
