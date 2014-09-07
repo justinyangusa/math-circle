@@ -120,7 +120,8 @@ a:after {
 .form-control {
 	height: 42px;
 	font-size: 18px;
-	width: 280px;
+	width: 280px!important;
+	font-weight: 400;
 }
 
 i {
@@ -171,12 +172,14 @@ i {
 	border-color: #b90000;
 }
 
-.dateLocation {
+.dates {
 	float: right!important;
+	font-weight: 300;
 }
 
-.dateLocation i {
+.dates > i {
 	color: white;
+	display: inline;
 }
 
 .officer {
