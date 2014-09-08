@@ -192,71 +192,86 @@ form.head {
 }
 
 .panel-primary .panel-heading {
-  color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
 }
 .panel-primary .panel-heading:hover,
 .panel-primary .panel-heading:focus,
 .panel-primary .panel-heading:active,
 .panel-primary .panel-heading.active {
-  color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+	color: #fff;
+	background-color: #3071a9;
+	border-color: #285e8e;
 }
 
 .panel-success .panel-heading {
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
 }
 .panel-success .panel-heading:hover,
 .panel-success .panel-heading:focus,
 .panel-success .panel-heading:active,
 .panel-success .panel-heading.active {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439;
 }
 
 .panel-info .panel-heading {
-  color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+	color: #fff;
+	background-color: #5bc0de;
+	border-color: #46b8da;
 }
 .panel-info .panel-heading:hover,
 .panel-info .panel-heading:focus,
 .panel-info .panel-heading:active,
 .panel-info .panel-heading.active {
-  color: #fff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+	color: #fff;
+	background-color: #31b0d5;
+	border-color: #269abc;
 }
 
 .panel-warning .panel-heading {
-  color: #fff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
+	color: #fff;
+	background-color: #f0ad4e;
+	border-color: #eea236;
 }
 .panel-warning .panel-heading:hover,
 .panel-warning .panel-heading:focus,
 .panel-warning .panel-heading:active,
 .panel-warning .panel-heading.active {
-  color: #fff;
-  background-color: #ec971f;
-  border-color: #d58512;
+	color: #fff;
+	background-color: #ec971f;
+	border-color: #d58512;
 }
 
 .panel-danger .panel-heading {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
 }
 .panel-danger .panel-heading:hover,
 .panel-danger .panel-heading:focus,
 .panel-danger .panel-heading:active,
 .panel-danger .panel-heading.active {
-  color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+	color: #fff;
+	background-color: #c9302c;
+	border-color: #ac2925;
+}
+
+#announcement {
+	padding-top: 54px;
+	padding-bottom: 5px;
+	text-align: center;
+	color: white;
+	background-color: #3498db;
+	font-size: larger;
+	font-weight: 600;
+}
+
+#announcement i {
+	color: white;
+	display: inline;
 }
