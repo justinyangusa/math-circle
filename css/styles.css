@@ -281,6 +281,9 @@ form.head {
 	text-align: center;
 }
 
+.hokay .hokay tr, .hokay td {
+	border: 1px solid black;
+}
 
 
 
