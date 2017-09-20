@@ -281,11 +281,13 @@ form.head {
 	text-align: center;
 }
 
-.hokay .hokay tr, .hokay td {
+.hokay .hokay tbody tr, .hokay tbody td {
 	border: 1px solid black;
 }
 
-
+.col-lg-4 {
+	width: 100%;
+}
 
 
 
